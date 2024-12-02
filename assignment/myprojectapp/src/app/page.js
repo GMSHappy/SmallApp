@@ -28,13 +28,11 @@ export default function MyApp() {
   const [cartItems, setCartItems] = React.useState([]);
   const [products, setProducts] = React.useState([]);
 
- {/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
   const slides = [
     { id: 1, image: '/images/donut1SideShow.gif', alt: 'Donut Slide 1' },
     { id: 2, image: '/images/D2SlideShow.gif', alt: 'Donut Slide 2' },
     { id: 3, image: '/images/SlideShow3gif.gif', alt: 'Donut Slide 3' },
   ];
- {/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
   // Fetch weather data
   React.useEffect(() => {
     fetch('http://localhost:3000/api/getWeather')
@@ -89,7 +87,7 @@ export default function MyApp() {
       .catch((err) => console.error('Error adding to cart:', err));
   };
 
- {/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+
   return (
     <Box className="page-container">
       <AppBar position="static" className="app-bar">
@@ -116,7 +114,6 @@ export default function MyApp() {
           </Typography>
           <Box sx={{ ml: 'auto', display: 'flex', alignItems: 'center' }}>
 
- {/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
             {/* Shopping Cart Icon */}
             <Tooltip title="View Shopping Cart">
            <IconButton
@@ -129,8 +126,6 @@ export default function MyApp() {
                 </Badge>
                  </IconButton>
                   </Tooltip>
-
- {/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
 
             {/* User Menu */}
             <Tooltip title="Open settings">
@@ -178,7 +173,7 @@ export default function MyApp() {
         </IconButton>
       </div>
        
-  {/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+
       {/* Products Section */}
       <Box sx={{ mt: 4, p: 2, backgroundColor: '#ffe6f0', textAlign: 'center' }}>
         <Typography variant="h5" sx={{ mb: 2, color: '#ff4081' }}>Our Products</Typography>
