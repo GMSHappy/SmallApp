@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('/images/hearts.gif') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .form-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-box {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .text-field input {
+    background: #ffe6f2;
+    color: #ff80b3;
+    border-radius: 25px;
+    border: 2px solid #ff80b3;
+    padding: 10px 15px;
+  }
+  
+  .text-field input:focus {
+    outline: none;
+    border-color: #ff4da6;
+    box-shadow: 0 0 5px #ff4da6;
+  }
+  
+  button {
+    background: linear-gradient(90deg, #ff4da6, #ff80b3);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(90deg, #ff80b3, #ff4da6);
+  }
+  
